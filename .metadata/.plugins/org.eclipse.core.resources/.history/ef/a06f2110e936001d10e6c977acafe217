@@ -1,0 +1,25 @@
+
+public class TestDemo {
+
+		public static void main(String[] args) {
+		
+			int num1 = 5;
+			int num2 = 6;
+			int sumTwoInt;
+			
+			sumTwoInt = addPositive(num1, num2);
+			
+		}
+	
+		public static int addPositive(int a, int b) {
+			
+			if ((a > 0) && (b > 0)) {
+				return a + b;
+			} else {
+				throw new IllegalArgumentException("Both parameters must be positive!");
+			}
+			
+		}
+		
+		
+}
